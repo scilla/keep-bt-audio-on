@@ -8,8 +8,8 @@ import threading
 class App(rumps.App):
     def __init__(self):
         super(App, self).__init__("Active BT Audio")
-        self.icon_active = "icon_active.png"
-        self.icon_inactive = "icon_inactive.png"
+        self.icon_active = "assets/icon_active.png"
+        self.icon_inactive = "assets/icon_inactive.png"
         self.menu.add(rumps.MenuItem("Start", callback=self.start))
         self.menu.add(rumps.MenuItem("Stop", callback=self.stop))
         self.audio_timeout = 15000
