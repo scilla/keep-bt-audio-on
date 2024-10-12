@@ -12,7 +12,7 @@ class App(rumps.App):
         self.icon_inactive = "assets/icon_inactive.png"
         self.menu.add(rumps.MenuItem("Start", callback=self.start))
         self.menu.add(rumps.MenuItem("Stop", callback=self.stop))
-        self.audio_timeout = 15000
+        self.audio_timeout = 60000
         self.silent_audio = AudioSegment.silent(duration=self.audio_timeout)
         self.is_running = False
         self.icon = self.icon_inactive
