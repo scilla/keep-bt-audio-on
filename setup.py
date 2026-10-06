@@ -6,7 +6,7 @@ OPTIONS = {
     "plist": {
         "LSUIElement": True,
     },
-    "packages": ["rumps", "pydub", "subprocess", "threading", "tempfile"],
+    "packages": ["rumps", "AVFoundation", "Foundation"],
 }
 
 DATA_FILES = [("assets", ["assets/icon_active.png", "assets/icon_inactive.png"])]
@@ -15,5 +15,5 @@ setup(
     app=APP,
     options={"py2app": OPTIONS},
     setup_requires=["py2app"],
-	data_files=DATA_FILES,
+    data_files=DATA_FILES,
 )

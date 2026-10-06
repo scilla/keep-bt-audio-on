@@ -1,3 +1,4 @@
-pydub==0.25.1
-py2app==0.28.8
 rumps==0.4.0
+pyobjc-framework-AVFoundation
+py2app
+setuptools
