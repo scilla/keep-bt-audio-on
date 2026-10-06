@@ -30,7 +30,8 @@ def ensure_silence_wav(path, seconds=10, rate=44100):
 
 class App(rumps.App):
     def __init__(self):
-        super().__init__("Active BT Audio", quit_button=None)
+        # template=True: macOS tints the icon to match the menu bar (light/dark).
+        super().__init__("Active BT Audio", template=True, quit_button=None)
         self.icon_active = resource_path("assets", "icon_active.png")
         self.icon_inactive = resource_path("assets", "icon_inactive.png")
         self.menu = [
